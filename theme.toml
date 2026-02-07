@@ -1,15 +1,14 @@
-name = "hello-friend-ng"
+name = "hello-hacker"
 license = "MIT"
-licenselink = "https://github.com/rhazdon/hugo-theme-hello-friend-ng/blob/master/LICENSE.md"
+licenselink = "https://github.com/Matir/hugo-theme-hello-hacker/blob/main/LICENSE.md"
 description = "A simple theme for Hugo. That's it."
 tags = ["blog", "clean", "customizable", "dark", "highlighting", "light", "minimal", "monochromatic", "multilingual", "personal", "responsive", "simple", "technical"]
 features = ["blog", "shortcode", "syntax highlighting"]
 min_version = 0.30
 
 [author]
-  name = "Djordje Atlialp"
-  homepage = "https://atlialp.com"
-  twitter = "https://twitter.com/rhazdon"
+  name = "David Tomaschik"
+  homepage = "https://systemoverlord.com"
 
 [original]
   name = "hello-friend"
