@@ -1,10 +1,13 @@
+@use "mixins";
+@use "variables";
+
 .post {
   width: 100%;
   max-width: 800px;
   text-align: left;
   padding: 20px;
   margin: 20px auto;
-  @media #{$media-size-tablet} {
+  @media #{variables.$media-size-tablet} {
     max-width: 600px;
   }
 
@@ -17,7 +20,7 @@
   &-title {
     font-size: 2.625rem;
     margin: 0 0 20px;
-    @media #{$media-size-phone} {
+    @media #{variables.$media-size-phone} {
       font-size: 2rem;
     }
 
@@ -44,10 +47,10 @@
   &-cover {
     border-radius: 8px;
     margin: 40px -50px;
-    width: $max-width;
-    max-width: $max-width;
+    width: variables.$max-width;
+    max-width: variables.$max-width;
     overflow: hidden;
-    @media #{$media-size-tablet} {
+    @media #{variables.$media-size-tablet} {
       margin: 20px 0;
       width: 100%;
     }
@@ -62,7 +65,7 @@
     margin-top: 30px;
     font-size: 0.8rem;
     line-height: normal;
-    @include dimmed;
+    @include mixins.dimmed;
 
     p {
       margin: 0.8em 0;
@@ -128,27 +131,27 @@
       letter-spacing: 0.1em;
       z-index: 1;
       // Default
-      background: $light-background;
-      color: $light-color-secondary;
+      background: variables.$light-background;
+      color: variables.$light-color-secondary;
 
       @media (prefers-color-scheme: dark) {
-        background: $dark-background;
-        color: $dark-color-secondary;
+        background: variables.$dark-background;
+        color: variables.$dark-color-secondary;
       }
     
       @media (prefers-color-scheme: light) {
-        background: $light-background;
-        color: $light-color-secondary;
+        background: variables.$light-background;
+        color: variables.$light-color-secondary;
       }
     
       [data-theme=dark] & {
-        background: $dark-background;
-        color: $dark-color-secondary;
+        background: variables.$dark-background;
+        color: variables.$dark-color-secondary;
       }
     
       [data-theme=light] & {
-        background: $light-background;
-        color: $light-color-secondary;
+        background: variables.$light-background;
+        color: variables.$light-color-secondary;
       }
     }
 
@@ -187,22 +190,22 @@
   cursor: pointer;
   appearance: none;
   // Default
-  background: $light-background-secondary;
+  background: variables.$light-background-secondary;
 
   @media (prefers-color-scheme: dark) {
-    background: $dark-background-secondary;
+    background: variables.$dark-background-secondary;
   }
 
   @media (prefers-color-scheme: light) {
-    background: $light-background-secondary;
+    background: variables.$light-background-secondary;
   }
 
   [data-theme=dark] & {
-    background: $dark-background-secondary;
+    background: variables.$dark-background-secondary;
   }
 
   [data-theme=light] & {
-    background: $light-background-secondary;
+    background: variables.$light-background-secondary;
   }
 
   + .button {

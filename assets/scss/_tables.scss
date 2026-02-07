@@ -1,3 +1,5 @@
+@use "variables";
+
 .post-content {
   table {
     border-collapse: collapse;
@@ -10,22 +12,22 @@
     td {
       padding: 12px 15px;
       // Default
-      border: 1px solid $light-table-color;
+      border: 1px solid variables.$light-table-color;
       
       @media (prefers-color-scheme: dark) {
-        border: 1px solid $dark-table-color;
+        border: 1px solid variables.$dark-table-color;
       }
     
       @media (prefers-color-scheme: light) {
-        border: 1px solid $light-table-color;
+        border: 1px solid variables.$light-table-color;
       }
     
       [data-theme=dark] & {
-        border: 1px solid $dark-table-color;
+        border: 1px solid variables.$dark-table-color;
       }
     
       [data-theme=light] & {
-        border: 1px solid $light-table-color;
+        border: 1px solid variables.$light-table-color;
       }
     }
 
@@ -33,27 +35,27 @@
       tr {
         text-align: left;
         // Default
-        background-color: $light-table-color;
-        color: $light-color;
+        background-color: variables.$light-table-color;
+        color: variables.$light-color;
 
         @media (prefers-color-scheme: dark) {
-          background-color: $dark-table-color;
-          color: $dark-color;
+          background-color: variables.$dark-table-color;
+          color: variables.$dark-color;
         }
       
         @media (prefers-color-scheme: light) {
-          background-color: $light-table-color;
-          color: $light-color;
+          background-color: variables.$light-table-color;
+          color: variables.$light-color;
         }
       
         [data-theme=dark] & {
-          background-color: $dark-table-color;
-          color: $dark-color;
+          background-color: variables.$dark-table-color;
+          color: variables.$dark-color;
         }
       
         [data-theme=light] & {
-          background-color: $light-table-color;
-          color: $light-color;
+          background-color: variables.$light-table-color;
+          color: variables.$light-color;
         }
       }
     }
@@ -61,22 +63,22 @@
     tbody {
       tr {
         // Default
-        border: 1px solid $light-table-color;
+        border: 1px solid variables.$light-table-color;
         
         @media (prefers-color-scheme: dark) {
-          border: 1px solid $dark-table-color;
+          border: 1px solid variables.$dark-table-color;
         }
       
         @media (prefers-color-scheme: light) {
-          border: 1px solid $light-table-color;
+          border: 1px solid variables.$light-table-color;
         }
       
         [data-theme=dark] & {
-          border: 1px solid $dark-table-color;
+          border: 1px solid variables.$dark-table-color;
         }
       
         [data-theme=light] & {
-          border: 1px solid $light-table-color;
+          border: 1px solid variables.$light-table-color;
         }
       }
     }

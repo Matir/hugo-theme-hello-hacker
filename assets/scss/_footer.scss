@@ -1,7 +1,9 @@
+@use "variables";
+
 .footer {
   padding: 40px 20px;
   flex-grow: 0;
-  color: $light-color-secondary;
+  color: variables.$light-color-secondary;
 
   &__inner {
     display: flex;
@@ -11,7 +13,7 @@
     width: 760px;
     max-width: 100%;
 
-    @media #{$media-size-tablet} {
+    @media #{variables.$media-size-tablet} {
       flex-direction: column;
     }
   }
@@ -21,9 +23,9 @@
     flex-direction: row;
     align-items: center;
     font-size: 1rem;
-    color: $light-color-secondary;
+    color: variables.$light-color-secondary;
 
-    @media #{$media-size-tablet} {
+    @media #{variables.$media-size-tablet} {
       flex-direction: column;
       margin-top: 10px;
     }
@@ -32,7 +34,7 @@
       content: "•";
       padding: 0 5px;
 
-      @media #{$media-size-tablet} {
+      @media #{variables.$media-size-tablet} {
           content: "";
           padding: 0;
       }
@@ -41,7 +43,7 @@
     & > *:last-child {
       padding: 0 0px;
 
-      @media #{$media-size-tablet} {
+      @media #{variables.$media-size-tablet} {
           padding: 0;
       }
     }

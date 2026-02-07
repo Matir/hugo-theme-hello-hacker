@@ -1,25 +1,27 @@
+@use "variables";
+
 .menu {
   z-index: 9999;
   // Default
-  background: $light-background-header;
+  background: variables.$light-background-header;
 
   @media (prefers-color-scheme: dark) {
-    background: $dark-background-header;
+    background: variables.$dark-background-header;
   }
 
   @media (prefers-color-scheme: light) {
-    background: $light-background-header;
+    background: variables.$light-background-header;
   }
 
   [data-theme=dark] & {
-    background: $dark-background-header;
+    background: variables.$dark-background-header;
   }
 
   [data-theme=light] & {
-    background: $light-background-header;
+    background: variables.$light-background-header;
   }
 
-  @media #{$media-size-phone} {
+  @media #{variables.$media-size-phone} {
     position: absolute;
     top: 50px;
     right: 0;
@@ -42,7 +44,7 @@
       margin: 0 12px;
     }
 
-    @media #{$media-size-phone} {
+    @media #{variables.$media-size-phone} {
       flex-direction: column;
       align-items: flex-start;
       padding: 0;
@@ -62,7 +64,7 @@
     cursor: pointer;
     display: none;
 
-    @media #{$media-size-phone} {
+    @media #{variables.$media-size-phone} {
       display: block;
     }
   }
@@ -84,22 +86,22 @@
 
 
 .submenu {
-  background: $light-background-header;
+  background: variables.$light-background-header;
 
   @media (prefers-color-scheme: dark) {
-    background: $dark-background-header;
+    background: variables.$dark-background-header;
   }
 
   @media (prefers-color-scheme: light) {
-    background: $light-background-header;
+    background: variables.$light-background-header;
   }
 
   [data-theme=dark] & {
-    background: $dark-background-header;
+    background: variables.$dark-background-header;
   }
 
   [data-theme=light] & {
-    background: $light-background-header;
+    background: variables.$light-background-header;
   }
 
   ul {
@@ -121,18 +123,18 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background: $dark-background-header;
+    background: variables.$dark-background-header;
 
     @media (prefers-color-scheme: light) {
-      background: $light-background-header;
+      background: variables.$light-background-header;
     }
     
     [data-theme=dark] & {
-      background: $dark-background-header;
+      background: variables.$dark-background-header;
     }
   
     [data-theme=light] & {
-      background: $light-background-header;
+      background: variables.$light-background-header;
     }
   }
 
@@ -144,18 +146,18 @@
   }
 
   .dropdown-content a:hover {
-    background: $dark-background-header;
+    background: variables.$dark-background-header;
     
     @media (prefers-color-scheme: light) {
-      background: $light-background-header;
+      background: variables.$light-background-header;
     }
 
     [data-theme=dark] & {
-      background: $dark-background-header;
+      background: variables.$dark-background-header;
     }
   
     [data-theme=light] & {
-      background: $light-background-header;
+      background: variables.$light-background-header;
     }
   }
 

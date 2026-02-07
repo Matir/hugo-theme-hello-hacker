@@ -1,3 +1,5 @@
+@use "variables";
+
 html {
   box-sizing: border-box;
   line-height: 1.6;
@@ -30,31 +32,31 @@ body {
   flex-direction: column;
 
   // Default
-  background-color: $light-background;
-  color: $light-color;
+  background-color: variables.$light-background;
+  color: variables.$light-color;
 
-  @media #{$media-size-phone} {
+  @media #{variables.$media-size-phone} {
     font-size: 1rem;
   }
 
   @media (prefers-color-scheme: dark) {
-    background-color: $dark-background;
-    color: $dark-color;
+    background-color: variables.$dark-background;
+    color: variables.$dark-color;
   }
 
   @media (prefers-color-scheme: light) {
-    background-color: $light-background;
-    color: $light-color;
+    background-color: variables.$light-background;
+    color: variables.$light-color;
   }
 
   [data-theme=dark] & {
-    background-color: $dark-background;
-    color: $dark-color;
+    background-color: variables.$dark-background;
+    color: variables.$dark-color;
   }
 
   [data-theme=light] & {
-    background-color: $light-background;
-    color: $light-color;
+    background-color: variables.$light-background;
+    color: variables.$light-color;
   }
 }
 
@@ -85,7 +87,7 @@ h4 {
   font-size: 1.125rem;
 }
 
-@media #{$media-size-phone} {
+@media #{variables.$media-size-phone} {
   h1 {
     font-size: 2rem;
   }
@@ -191,14 +193,14 @@ figure {
 
 em, i, strong {
   // Default
-  color: $light-color-variant;
+  color: variables.$light-color-variant;
 
   @media (prefers-color-scheme: dark) {
-    color: $dark-color-variant;
+    color: variables.$dark-color-variant;
   }
 
   @media (prefers-color-scheme: light) {
-    color: $light-color-variant;
+    color: variables.$light-color-variant;
   }
 
   [data-theme=dark] & {
@@ -219,32 +221,32 @@ em, i, strong {
   border-radius: 5px;
   font-size: 0.95rem;
   // Default
-  background: $light-background-secondary;
+  background: variables.$light-background-secondary;
 
   @media (prefers-color-scheme: dark) {
-    background: $dark-background-secondary;
+    background: variables.$dark-background-secondary;
   }
 
   @media (prefers-color-scheme: light) {
-    background: $light-background-secondary;
+    background: variables.$light-background-secondary;
   }
 
   [data-theme=dark] & {
-    background: $dark-background-secondary;
+    background: variables.$dark-background-secondary;
   }
 
   [data-theme=light] & {
-    background: $light-background-secondary;
+    background: variables.$light-background-secondary;
   }
 }
 
 pre {
   [data-theme=dark] & {
-    background-color: $dark-background-secondary;
+    background-color: variables.$dark-background-secondary;
   }
 
   [data-theme=light] & {
-    background-color: $light-background-secondary;
+    background-color: variables.$light-background-secondary;
   }
 
   padding: 10px 10px 10px 20px;
@@ -252,7 +254,7 @@ pre {
   font-size: 0.95rem;
   overflow: auto;
 
-  @media #{$media-size-phone} {
+  @media #{variables.$media-size-phone} {
     white-space: pre-wrap;
     word-wrap: break-word;
   }
@@ -288,7 +290,7 @@ blockquote {
   margin: 40px;
   padding: 10px 20px;
 
-  @media #{$media-size-phone} {
+  @media #{variables.$media-size-phone} {
     margin: 10px;
     padding: 10px;
   }
@@ -317,7 +319,7 @@ ol {
   margin-left: 40px;
   padding: 0;
 
-  @media #{$media-size-phone} {
+  @media #{variables.$media-size-phone} {
     margin-left: 20px;
   }
 }
@@ -342,7 +344,7 @@ ol ol {
   justify-content: center;
   margin: 0;
 
-  @media #{$media-size-phone} {
+  @media #{variables.$media-size-phone} {
     margin-top: 0;
   }
 }
@@ -355,7 +357,7 @@ ol ol {
   justify-content: start;
   margin: 0;
 
-  @media #{$media-size-phone} {
+  @media #{variables.$media-size-phone} {
     margin-top: 0;
   }
 }
@@ -365,22 +367,22 @@ hr {
   border: none;
   height: 1px;
   // Default
-  background: $light-border-color;
+  background: variables.$light-border-color;
 
   @media (prefers-color-scheme: dark) {
-    background: $dark-border-color;
+    background: variables.$dark-border-color;
   }
 
   @media (prefers-color-scheme: light) {
-    background: $light-border-color;
+    background: variables.$light-border-color;
   }
 
   [data-theme=dark] & {
-    background: $dark-border-color;
+    background: variables.$dark-border-color;
   }
 
   [data-theme=light] & {
-    background: $light-border-color;
+    background: variables.$light-border-color;
   }
 }
 
@@ -389,13 +391,13 @@ hr {
 }
 
 .hide-on-phone {
-  @media #{$media-size-phone} {
+  @media #{variables.$media-size-phone} {
     display: none;
   }
 }
 
 .hide-on-tablet {
-  @media #{$media-size-tablet} {
+  @media #{variables.$media-size-tablet} {
     display: none;
   }
 }
