@@ -212,7 +212,7 @@ em, i, strong {
   }
 }
 
-> code {
+:not(pre) > code {
   font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
   font-display: auto;
   font-feature-settings: normal;

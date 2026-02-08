@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# Check if sass is installed
+if ! command -v sass >/dev/null 2>&1; then
+    echo "WARNING: sass not found. Skipping Sass check."
+    exit 0
+fi
+
+echo "Checking Sass compilation..."
+
+# Compile main.scss to /dev/null to check for errors.
+# We check main.scss because it imports the other partials.
+if ! sass assets/scss/main.scss /dev/null --no-source-map; then
+    echo "Error: Sass compilation failed. Please fix the errors before committing."
+    exit 1
+fi
+
+echo "Sass check passed."
+exit 0
