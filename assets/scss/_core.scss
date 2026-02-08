@@ -213,7 +213,7 @@ em, i, strong {
 }
 
 :not(pre) > code {
-  font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
+  font-family: variables.$font-family-monospace;
   font-display: auto;
   font-feature-settings: normal;
   padding: 1px 6px;
@@ -447,4 +447,10 @@ hr {
 // Prism JS Additionals
 .highlight {
   margin: 10px auto;
+}
+
+// Override PrismJS font family
+code[class*="language-"],
+pre[class*="language-"] {
+  font-family: variables.$font-family-monospace;
 }
