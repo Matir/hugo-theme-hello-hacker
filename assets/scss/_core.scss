@@ -360,6 +360,11 @@ ol ol {
   @media #{variables.$media-size-phone} {
     margin-top: 0;
   }
+
+  &.page {
+    text-align: justify;
+    text-align-last: left;
+  }
 }
 
 hr {
